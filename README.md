@@ -19,8 +19,11 @@ This project focuses on building a personal website using the tools &amp; techni
 
 ## Project Website Design Inspiration
 
-Inspirtation for this website comes from the Web Designer Dliya' Zarror Nibros "@dzarrorn" from the Figma Community for designing such a simple and elegant 'Personal Portfolio Website'
-Link to his work: https://www.figma.com/community/file/1046729672969016441/Personal-Portfolio-Website
+Inspirtation for this website comes from the Web Designer Dliya' Zarror Nibros "@dzarrorn" from the Figma Community for designing simple and elegant 'Personal Portfolio Websites'
+Link to his works: 
+* https://www.figma.com/community/file/1046729672969016441
+* https://www.figma.com/community/file/1046765627354493057
+I planned to take some elements from both the designs to fit my own personal portfolio
 
 ## Evaluation Criteria
 
