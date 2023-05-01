@@ -1,0 +1,8 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar-main{
+    background-color: #378b29;
+    background-image: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+}

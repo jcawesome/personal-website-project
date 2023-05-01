@@ -14,13 +14,18 @@
   <link rel="icon" href="/jovian_favicon.png" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-  <script src='main.js'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel='stylesheet' type='text/css' href='/styles.css'>
+
 </head>
 
-<body>
+<body">
   <!--NAVBAR-->
-  <nav class="navbar navbar-expand-md shadow-sm">
+  <nav id="navbar-main" class="navbar navbar-expand-md shadow-sm">
     <div class="container-lg px-4">
       <a class="navbar-brand" href="/">
         <img id="logo" alt="Jovian Logo" src="https://i.imgur.com/JRA5Q8a.png" height="30" class="d-md-none" />
@@ -35,23 +40,24 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" target="_blank" href="https://jovian.com/learn">
-              Courses
+            <a class="nav-link active" aria-current="page" href="/" target="_self">
+              Home
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://jovian.com/learn" target="_blank">
-              Programs
+            <a class="nav-link" href="#about-section" target="_self">
+              About
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://youtube.com/@jovianhq" target="_blank">
-              YouTube
+            <a class="nav-link" href="#project-section" target="_self">
+              Projects
             </a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary ms-md-2" href="https://jovian.com/login" role="button" target="_blank">
-              Sign In
+            <!--Add Contact Link here-->
+            <a class="btn btn-primary ms-md-2" href="/" role="button" target="_blank">
+              Let's Talk
             </a>
           </li>
         </ul>
@@ -59,35 +65,49 @@
     </div>
   </nav>
 
+  <!--HERO SECTION-->
+  <div id="hero-section" class="container px-4">
+
+  </div>
+
+  <!--SKILLS SECTION-->
+  <div id="skill-section" class="container px-4">
+
+  </div>
+
   <!--ABOUT SECTION-->
-  <div class="container px-4">
+  <div id="about-section" class="container px-4">
     <div class="row flex-lg-row-reverse align-items-center g-4 py-4">
       <div class="col-12 col-lg-6">
         <img src="https://i.imgur.com/sxbxff5.jpg" class="d-block mx-lg-auto img-fluid rounded" loading="lazy" />
       </div>
       <div class="col-lg-6">
         <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3 text-center d-lg-none">
-          Work at Jovian
+          About Me.
         </h1>
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 d-none d-lg-block">
-          Work at Jovian
+          About Me.
         </h1>
         <p class="lead">
-          At Jovian, we're on a mission to build the world's most highly
-          reputed technical university, and we're building it completely
-          online. We offer several beginner friendly courses that are taken by
-          300,000+ registered users.
+          I'm a technology enthusiast currently working as a Technical Consultant specializing in Customer Intelligence
+          and Decision Science. However, my hobbies revolve include learning new technologies, cloud system
+          architecture, python for data science and currently 'Full-Stack Development'
         </p>
-        <p class="lead">We also offer 2 industry-focused bootcamps:</p>
+        <p class="lead">My professional expertise revolves around:</p>
         <ol class="lead">
           <li>
-            <a href="https://www.jovian.com/full-stack-developer-bootcamp">
-              Jovian Full Stack Developer Bootcamp
+            <a href="/">
+              Decision Science
             </a>
           </li>
           <li>
-            <a href="https://www.jovian.com/data-science-bootcamp">
-              Jovian Data Science Bootcamp
+            <a href="/">
+              Machine Learning using Python
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Front-End Web Development using Bootstrap
             </a>
           </li>
         </ol>
@@ -96,8 +116,8 @@
   </div>
 
   <!--PROJECTS-->
-  <div class="container px-4 mt-5">
-    <h2 class="text-center mb-4">Job Opportunities</h2>
+  <div id="project-section" class="container px-4 mt-5">
+    <h2 class="text-center mb-4">Projects</h2>
 
     <!--PROJECTS LIST-->
     <div class="d-xl-none">
@@ -179,7 +199,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</body>
+  <script src="/script.js"></script>
+  </body>
 
 </html>
