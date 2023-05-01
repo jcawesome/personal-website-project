@@ -1,0 +1,19 @@
+{
+  "name": "personal-website-project",
+  "version": "1.0.0",
+  "description": "This project focuses on building a personal website using the tools &amp; techniques covered in the Jovian Full Stack Developer course specifically HTML/CSS & JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon nodemon -e js,mustache,css,json src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mustache-express": "^1.3.2",
+    "nodemon": "^2.0.22"
+  }
+}
