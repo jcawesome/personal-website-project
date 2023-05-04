@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const mustacheExpress = require('mustache-express');
 const PROJECTS = require('./projects');
-const PROJECTS_FS = require('./projects-fullstack');
+const PROJECTS_FS = require('./projects-fullstack.js');
 
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
@@ -14,12 +14,8 @@ app.engine('mustache', mustacheExpress());
 
 // Render the template
 app.get('/', (req, res) => {
-    res.render('index', { projects: PROJECTS});
+    res.render('index',  PROJECTS);
 })
-
-app.get('/', (req, res) => {
-    res.render('index', { projectsFS: PROJECTS_FS});
-})  
 
 const port = process.env.PORT || 3000;
 
