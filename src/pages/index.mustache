@@ -25,7 +25,7 @@
 
 <body">
   <!--NAVBAR-->
-  <nav id="navbar-main" class="navbar navbar-expand-md shadow-sm">
+  <nav id="navbar-main" class="navbar navbar-expand-md shadow-sm mb-4">
     <div class="container-lg px-4">
       <a class="navbar-brand" href="/">
         <img id="logo" alt="Jovian Logo" src="https://i.imgur.com/JRA5Q8a.png" height="30" class="d-md-none" />
@@ -68,7 +68,7 @@
   <!--HERO SECTION-->
   <div id="hero-section" class="container-fluid">
     <div class="row">
-      <div class="alight-items-center col-12">
+      <div class="alight-items-center col-12 mb-3">
         <h1 class="display-4 fw-bold content text-center d-lg-none">
           I'm <span class="purple-gradient-text">JC</span>. An Aspiring Data Scientist and Full Stack Developer
         </h1>
@@ -77,7 +77,7 @@
         </h1>
       </div>
       <div id="hero-text-1" class="d-flex justify-content-end align-self-start col-md-4 mt-4 mx-0 px-0">
-        <div class="hero-text p-4 text-center">
+        <div class="dark-purple-gradient hero-text p-4 text-center">
           <div class="hero-text-title">
             Data Scientist
           </div>
@@ -90,7 +90,7 @@
         <img id="hero-portrait" src="/jc_portrait_half.jpg" alt="hero-portrait">
       </div>
       <div id="hero-text-2" class="d-flex justify-content-start align-self-end col-md-4 mt-4 mx-0 px-0">
-        <div class="hero-text p-4 text-center">
+        <div class="dark-purple-gradient hero-text p-4 text-center">
           <div class="hero-text-title">
             Front-End Web Developer
           </div>
@@ -131,10 +131,10 @@
         <p class="lead text-white">My professional expertise revolves around:</p>
         <ol class="lead text-white">
           <li>
-            Decision Science
+            Decision Science using SAS
           </li>
           <li>
-            Machine Learning using Python
+            Data Science using Python
           </li>
           <li>
             Front-End Web Development using Bootstrap
@@ -144,52 +144,76 @@
     </div>
   </div>
 
-  <!--PROJECTS-->
-  <div id="project-section" class="container px-0 mt-5">
-    <h2 class="text-center mb-4">Projects</h2>
+  <!--PROJECTS & CERTIFICATION-->
+  <div id="certification-section" class="container mt-5 mb-5 px-1">
+    <div
+      class="d-flex flex-column flex-md-row-reverse justify-content-center align-items-center text-center gx-3 gy-3 g-3">
+      <!--Data Science Certifications Header-->
+      <div class="col-12 col-md-4 offset-md-1">
+        <h2 class=" text-center mb-4">Data Science</h2>
+        <h3 class=" text-center mb-4">Projects & Certifications</h3>
+        <p class="text-secondary pb-3 mb-4">
+          Here are some of my personal projects I've worked on during my free time and certifications in the field of
+          data science
+        </p>
+      </div>
 
-    <!--PROJECTS LIST-->
-    <div class="d-xl-none">
-
-      {{#projects}}
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title"><a href="/projects/{{id}}">{{title}}</a></h5>
-          <h6 class="card-subtitle my-1 text-body-secondary">
-            {{location}} • {{salary}}
-          </h6>
-          <small class="card-text text-body-secondary">
-            Posted {{posted}}
-          </small>
+      <!--Data Science Certifications Cards-->
+      <div class="col-10 offset-1 col-md-7 offset-md-0">
+        <div class="row">
+          {{#projects}}
+          <div class="card mb-3 col-12 col-lg-6">
+            <div class="card-body dark-purple-gradient">
+              <h4 class="text-white">{{type}}</h4>
+              <h5 class="card-title"><a href="{{issue_url}}" class="text-decoration-none certification-card-style-1"
+                  target="_blank">{{title}}</a></h5>
+              <h6 class="card-subtitle my-1 certification-card-style-2">
+                {{issue_organization}}
+              </h6>
+              <small class="card-text text-white">
+                Issued on {{issue_date}}
+              </small>
+            </div>
+          </div>
+          {{/projects}}
         </div>
       </div>
-      {{/projects}}
-
     </div>
 
-    <!--PROJECTS TABLE-->
-    <!--
-    <div class="offset-lg-2 col-lg-8">
-      <table class="d-none d-md-table table table-striped table-bordered">
-        <tr class="table-primary text-center">
-          <th>Job Title</th>
-          <th>Location</th>
-          <th>Salary</th>
-          <th>Posted On</th>
-        </tr>
+    <div
+      class="d-flex flex-column flex-md-row-reverse justify-content-center align-items-center text-center gx-3 gy-3 g-3">
+      <!--Data Science Certifications Header-->
+      <div class="col-12 col-md-4 offset-md-1">
+        <h2 class=" text-center mb-4">Full Stack Web Development</h2>
+        <h3 class=" text-center mb-4">Projects</h3>
+        <p class="text-secondary pb-3 mb-4">
+          Here are some of my personal projects I've worked on during my free time while taking up the Jovian Full Stack
+          Development Bootcamp
+        </p>
+      </div>
 
-        {{#projects}}
-        <tr>
-          <td><a href="/projects/{{id}}">{{title}}</a></td>
-          <td>{{location}}</td>
-          <td>{{salary}}</td>
-          <td>{{posted}}</td>
-        </tr>
-        {{/projects}}
-
-      </table>
+      <!--Data Science Certifications Cards-->
+      <div class="col-10 offset-1 col-md-7 offset-md-0">
+        <div class="row">
+          {{#projectsFS}}
+          <div class="card mb-3 col-12 col-lg-6">
+            <div class="card-body dark-purple-gradient">
+              <h4 class="text-white">{{type}}</h4>
+              <h5 class="card-title"><a href="{{issue_url}}"
+                  class="text-decoration-none certification-card-style-1">{{title}}</a></h5>
+              <h6 class="card-subtitle my-1 certification-card-style-2">
+                {{issue_organization}}
+              </h6>
+              <small class="card-text text-white">
+                Issued on {{issue_date}}
+              </small>
+            </div>
+          </div>
+          {{/projectsFS}}
+        </div>
+      </div>
     </div>
-    -->
+
 
   </div>
 
@@ -234,8 +258,8 @@
           </a>
         </li>
       </ul>
-      <p class="text-center text-secondary small">
-        © 2023 <span class="text-white">Jan Carlo Pagtalunan</span> (Personal Website and Design) | All Reserved
+      <p class="text-center text-secondary small col-6 offset-3 cold-md-12">
+        © 2023 <span class="text-white">Jan Carlo Pagtalunan</span>. | All rights reserved.
       </p>
     </div>
   </div>

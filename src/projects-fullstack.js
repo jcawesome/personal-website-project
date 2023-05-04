@@ -1,11 +1,11 @@
-const PROJECTS = [
+const PROJECTS_FS = [
     {
         id: 1,
         field: 'Data Science',
-        type: 'Certification',
-        title: 'MIT Data Science And Machine Learning',
-        issue_organization: 'MIT Schwarzman College of Computing',
-        issue_date: 'Apr 2023',
+        type: 'Project',
+        title: 'Scientific Calculator',
+        issue_organization: 'Jovian',
+        issue_date: 'May 2023',
         issue_url: 'https://olympus1.mygreatlearning.com/certificate/CXBXYBTR'
     },
     {
@@ -19,4 +19,4 @@ const PROJECTS = [
     }
 ]
 
-module.exports = PROJECTS;
+module.exports = PROJECTS_FS;
