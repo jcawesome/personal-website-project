@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const mustacheExpress = require('mustache-express');
 const PROJECTS = require('./projects');
-const PROJECTS_FS = require('./projects-fullstack.js');
 
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
