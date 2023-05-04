@@ -14,7 +14,13 @@ app.engine('mustache', mustacheExpress());
 // Render the template
 app.get('/', (req, res) => {
     res.render('index',  PROJECTS);
-})
+});
+
+// Define a route for the contact page
+app.get('/contact', (req, res) => {
+    // Send the contact.html file to the client
+    res.sendFile(__dirname + '/pages/contact.html');
+  });
 
 const port = process.env.PORT || 3000;
 

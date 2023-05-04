@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>JC Portfolio &#128512; | Powered by Bootstrap</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="description" content="Hi! I'm JC. Welcome to my personal portfolio. &#128512;" />
+  <meta property="og:title" content="JC Portfolio &#128512;" />
+  <meta property="og:description"
+    content="Learn more about JC, his skills/projects and how he can work with you in your next project!" />
+  <meta property="og:image" content="/jovian_meta.png" />
+  <link rel="icon" href="/jovian_favicon.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel='stylesheet' type='text/css' href='/styles.css'>
+
+</head>
+
+<body">
+  <!--NAVBAR-->
+  <nav id="navbar-main" class="navbar navbar-expand-md shadow-sm mb-4">
+    <div class="container-lg px-4">
+      <a class="navbar-brand" href="/">
+        <img id="logo" alt="Jovian Logo" src="https://i.imgur.com/JRA5Q8a.png" height="30" class="d-md-none" />
+        <img id="logo-with-text" alt="Jovian Logo" src="https://i.imgur.com/m1wXjqw.png" height="30"
+          class="d-none d-md-inline" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/" target="_self">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/#about-section" target="_self">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/#project-section" target="_self">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <!--Add Contact Link here-->
+            <a class="btn btn-lets-talk ms-md-2 text-white" href="/contact" role="button" target="_blank">
+              Let's Talk
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!--APPLICATION FORM-->
+   <div class="container px-4 mt-5 mb-5">
+    <h1 class="text-center">Contact JC</h1>
+    <div class="text-center mb-5">
+      <h3>
+        Would you like to collaborate on a project?
+        Are you interested in working with me?
+        Or maybe just want to chat on the fastatic world of tech, data science or programming.
+      </h3>
+      <h2>
+        <span class="purple-gradient-text">Just hit me up!</span> &#128512;
+      </h2>  
+    </div>
+    <form
+      class="offset-lg-2 col-lg-8"
+      action="/jobs/{{job.id}}/apply"
+      method="POST"
+    >
+      <!--NAME-->
+      <div class="mb-3 col-sm-6">
+        <label for="fullname" class="form-label"> Full Name </label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          required
+          placeholder="Your name"
+          id="fullname"
+        />
+      </div>
+
+      <!--EMAIL-->
+      <div class="mb-3 col-sm-6">
+        <label for="email" class="form-label"> Email address </label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          placeholder="Enter Your Email Address"
+          id="email"
+          aria-describedby="emailHelp"
+          required
+        />
+        <div id="emailHelp" class="form-text">
+          I'll never share your email with anyone else.
+        </div>
+      </div>
+
+      <!--SUBJECT-->
+      <div class="mb-3 col-sm-6">
+        <label for="subject" class="form-label"> Subject </label>
+        <input
+          type="text"
+          class="form-control"
+          name="subject"
+          required
+          placeholder="Your Subject"
+          id="subject"
+        />
+      </div>
+
+      <!--MESSAGE-->
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea
+          placeholder="Your Message"
+          class="form-control"
+          id="message"
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <!--SUBMIT BUTTON-->
+      <button type="submit" class="btn btn-hit-me-up ms-md-2 text-white">
+        Submit Application
+      </button>
+    </form>
+  </div>
+
+
+  <!--FOOTER -->
+  <div class="container-fluid px-0 my-0">
+    <div class="py-4 bg-dark ">
+      <ul class="nav justify-content-center py-4">
+        <li class="nav-item">
+          <a href="https://twitter.com/PagtalunanJan" class="nav-link px-2 text-body-secondary" target="_blank">
+            <img class="footer-svg" alt="Twitter Logo" src="/twitter.svg"></img>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/jan-carlo-pagtalunan/" class="nav-link px-2 text-body-secondary"
+            target="_blank">
+            <img class="footer-svg" alt="LinkedIn Logo" src="/linkedin.svg"></img>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://jovian.com/jcawesome" class="nav-link px-2 text-body-secondary" target="_blank">
+            <img class="footer-svg" alt="Jovian Logo" src="/jovian-black.svg" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://eportfolio.mygreatlearning.com/jan-carlo-pagtalunan"
+            class="nav-link px-2 text-body-secondary" target="_blank">
+            <img class="footer-svg" alt="Great Learning Logo" src="/gl-black.jpg" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://jovian.com/login" class="nav-link px-2 text-body-secondary" target="_blank">
+            <img class="footer-svg" alt="Github Logo" src="/square-github.svg"></img>
+          </a>
+        </li>
+      </ul>
+      <p class="text-center text-secondary small col-6 offset-3 cold-md-12">
+        © 2023 <span class="text-white">Jan Carlo Pagtalunan</span>. | All rights reserved.
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+  </body>
+
+</html>
