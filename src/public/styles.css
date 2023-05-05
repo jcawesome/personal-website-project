@@ -54,7 +54,7 @@ h1 {
 .hero-text {
     border-radius: 200px;
     color: #FFFFFF;
-    width: 288px;
+    width: auto;
     height: 100px;
 }
 
