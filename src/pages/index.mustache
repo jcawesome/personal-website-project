@@ -25,19 +25,20 @@
 
 <body">
   <!--NAVBAR-->
-  <nav id="navbar-main" class="navbar navbar-expand-md shadow-sm mb-4">
+  <nav id="navbar-main" class="navbar navbar-expand-md shadow-sm mb-4 navbar-light bg-light">
     <div class="container-lg px-4">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand order-1" href="/">
         <img id="logo" alt="Jovian Logo" src="https://i.imgur.com/JRA5Q8a.png" height="30" class="d-md-none" />
         <img id="logo-with-text" alt="Jovian Logo" src="https://i.imgur.com/m1wXjqw.png" height="30"
           class="d-none d-md-inline" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      
+      <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    
+      <div class="collapse navbar-collapse justify-content-end order-3" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="/" target="_self">
@@ -54,14 +55,16 @@
               Projects
             </a>
           </li>
-          <li class="nav-item">
-            <!--Add Contact Link here-->
+          <!-- <li class="nav-item">
             <a class="btn btn-lets-talk ms-md-2 text-white" href="/contact" role="button" target="_blank">
               Let's Talk
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
+      <a class="btn btn-lets-talk ms-md-2 text-white order-4" href="/contact" role="button" target="_blank">
+        Let's Talk
+      </a>
     </div>
   </nav>
 
